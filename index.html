@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home - [nome]</title>
+        <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/nav.css">
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/card.css">
+        <link rel="stylesheet" href="./style/footer.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="#apresentacao">Home</a>
+                    </li>
+                    <li>
+                        <a href="#curriculo">Currículo</a>
+                    </li>
+                    <li>
+                        <a href="./projetos.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="apresentacao">
+                <article>
+                    <h2>
+                        Meu nome é [nome]
+                    </h2>
+                    <h3>Sou [função]</h3>
+                    <p>
+                        [descrição]
+                    </p>
+                </article>
+                <aside>
+                    <img src="./imgs/exemplo.png">
+                </aside>
+            </section>
+
+            <section id="curriculo">
+                <section class="experiencia">
+                    <h2>Experiência</h2>
+                    <div class="card"> <!--copie mais desse-->
+                        <img class="icon" src="./imgs/exemplo.png" >
+                        <div>
+                            <p class="instituicao">Empresa</p>
+                            <p><i>Cargo</i></p>
+                            <p class="funcao">
+                                Função
+                            </p>
+                            <span class="tempo">Duração</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="formacao">
+                    <h2>Formação</h2>
+                    <div class="card">
+                        <img class="icon" src="./imgs/exemplo.png"> <!--copie mais desse-->
+                        <div>
+                            <p class="instituicao">Escola</p>
+                            <p>Curso</p>
+                            <span class="tempo">Duração</span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <div class="links-contato">
+                    <a href="mailto:email" class="btn detalhes">
+                        <i class="fas fa-at"></i> email
+                    </a>
+                    <a href="https://www.linkedin.com" class="btn detalhes">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=[codPais+codEstado+numero]&text=&type=phone_number&app_absent=0" class="btn detalhes">
+                        <i class="fab fa-whatsapp"></i> [numero]
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="cv">
+                <a href="./documents/cv.pdf" class="btn" download>Baixar Curriculo <i class="fa fa-download"></i></a>
+                <span class="att">Ultima Atualização: [data]</span>
+            </div>
+        </footer>
+    </body>
+
+    
+</html>

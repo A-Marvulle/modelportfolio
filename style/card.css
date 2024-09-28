@@ -1,0 +1,55 @@
+.card {
+    border: 2px var(--acento-8) solid; 
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: rgba(69, 86, 125, 0.15) 5px 5px 6px;
+}
+
+.icon{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.instituicao{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.funcao{
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.tempo {
+    font-size: smaller;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/*media*/
+@media screen and (max-width: 720px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0;
+    }
+
+    .funcao {
+        text-align: center;
+    }
+
+    .instituicao {
+        font-size: 2rem;
+    }
+}

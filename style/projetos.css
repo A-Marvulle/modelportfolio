@@ -1,0 +1,113 @@
+.explicacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--acento-2);
+}
+
+.explicacao p{
+    text-align: justify;
+    font-size: 1.5em;
+    padding: 0 5em 0 5em;
+}
+.links-contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap; 
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+
+}
+
+.e {
+    background-color: var(--cinza-9);
+    color: var(--fundo) !important;
+}
+
+.detalhes {
+    font-size: 2.4rem;
+    color: var(--cinza);
+    transition: background 0.3s ease-out;
+}
+
+.detalhes:hover {
+    background: #2C4480;
+    color: var(--fundo);
+}
+
+.trabalhos {
+    text-align: center;
+    padding: 2rem;
+    margin: 5rem 0 0 0;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projeto {
+    background: var(--acento);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.projeto-img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: contain;
+}
+
+#img-revista {
+    margin: auto;
+    width: 700px;
+    height: 700px;
+}
+
+.projeto-nome {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.curriculo{
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+/*media*/
+@media (max-width: 30.625em) {
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+    .explicacao p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hr-curriculo, .curriculo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #img-revista {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+}

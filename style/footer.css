@@ -1,0 +1,58 @@
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: var(--cinza);
+    border-top: 4px solid var(--acento);
+}
+
+.cv {
+    display: block;
+    width: 16rem;
+    margin: 1rem;
+    color: var(--fundo);
+}
+
+.cv .btn {
+    border: none;
+    text-align: center;
+    background-color: var(--acento); 
+    color: var(--fundo);
+    padding: 0.75rem;
+    transition: background 0.4s ease-in;
+    width: 20rem;
+}
+
+.cv .btn:hover {
+    background-color: var(--acento-11);
+}
+
+.att {
+    font-size: smaller;
+    color: var(--fundo);
+}
+
+.ft { /*não interfirir na home*/
+    padding: 0 0 0 2rem;
+}
+
+.links-contato {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-contato .f { /*não interfirir na home*/
+    color: var(--fundo);
+}
+
+/*media*/
+@media (max-width: 28.75em) {
+    footer {
+    flex-direction: column;
+    text-align: center;
+    }
+}

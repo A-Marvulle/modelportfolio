@@ -1,0 +1,129 @@
+body{
+    background-color: var(--acento-1);
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--acento-2);
+}
+
+article {
+    width: 100%; 
+    padding: 4em;
+}
+
+article h2{
+    text-align: left;
+}
+
+article p {
+    text-align: justify;
+    font-size: 2rem;
+}
+
+article span {
+    position: relative;
+    white-space: nowrap; /* Para evitar quebra de linha durante a digitação */
+}
+
+article span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--acento);
+    right: 0;
+    opacity: 1;
+    animation: cursor 0.8s steps(20) infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid var(--acento-1);
+    }
+}
+
+aside {
+    width: 25em;
+    margin: 5rem;
+    float: right;
+} 
+
+aside img {
+    border-radius: 50%;
+}
+
+#curriculo {
+    width: 100%;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100dvh;
+    padding: 0 2rem;
+    background-color: var(--acento-2);    
+}
+
+.links-contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.detalhes {
+    font-size: 2.4rem;
+    color: var(--cinza);
+    transition: background 0.3s ease-out;
+}
+
+.detalhes:hover {
+    background: var(--acento-10);
+    color: var(--fundo);
+}
+
+/*media*/
+@media (max-width: 28.75em) {
+    #contato > h2 {
+        font-size: 4rem;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    article p {
+        font-size: 1.5rem;
+    }
+    #apresentacao {
+        display: flex;
+        flex-direction: column; /* Coloca a imagem em cima do texto */
+    }
+    
+    #apresentacao article {
+        max-width: 600px;
+        padding: 20px;
+    }
+    
+    #apresentacao aside img {
+        max-width: 100%;
+        height: auto;
+    }
+    article h2{
+        font-size: 3rem;
+    }
+}

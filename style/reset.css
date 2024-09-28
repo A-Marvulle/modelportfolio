@@ -1,0 +1,69 @@
+:root { /*Gerado em : https://www.radix-ui.com/colors/custom | Accent: #1B316B| Gray: #333333 | Background: #F0F0F0 */
+    --fundo: #f0f0f0;
+    --acento: #1b316b;
+    --cinza: #333333;
+
+    --acento-1:#EBEDEF;
+    --acento-2: #E4E8EF;
+    --cinza-1: #ECECEC;
+    --cinza-2: #E8E8E8;
+
+    --acento-3:#D8DFEE;
+    --acento-4: #CAD7F2;
+    --acento-5: #B9CCF3;
+    --cinza-3: #DEDEDE;
+    --cinza-4: #D5D5D5;
+    --cinza-5: #CCC;
+
+    --acento-6: #A6BDEE;
+    --acento-7: #8DAAE8;
+    --acento-8:#6C90E4;
+    --cinza-6: #C4C4C4;
+    --cinza-7: #B8B8B8;
+    --cinza-8: #A5A5A5;
+
+    --acento-9: #1B316B;
+    --acento-10: #2C4480;
+    --cinza-9: #777;
+    --cinza-10: #6D6D6D;
+
+    --acento-11: #3B5BAA;
+    --acento-12: #192F69;
+    --cinza-11: #505050;
+    --cinza-12: #202020;
+}
+
+*{margin: 0;padding: 0;}
+
+*,*::before,*::after {box-sizing: inherit;}
+
+#apresentacao,#curriculo,#contato {scroll-margin-top: 80px;}
+
+html{box-sizing: border-box;font-size: 62.5%;scroll-behavior: smooth;}
+
+body{font-size: 1.8rem;font-weight: 400;line-height: 1.4;}
+
+h1,h2{font-family: 'Raleway', sans-serif;font-weight: 700;text-align: center; color: var(--acento-12);}
+
+h1{font-size: 6rem;}
+
+h2{font-size: 4.2rem;}
+
+ul{list-style: none;}
+
+a{text-decoration: none;color: var(--fundo);}
+
+img{display: block;width: 100%;}
+
+/*media*/
+@media (max-width: 75em) {
+    html {font-size: 60%;}
+}
+
+@media (max-width: 61.25em) {
+    html {font-size: 58%;}
+}
+
+@media (max-width: 28.75em) {
+    html {font-size: 55%;}
+}
